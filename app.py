@@ -1,11 +1,12 @@
 import streamlit as st
 import fitz
 import requests
+import os
 from io import BytesIO
 from docx import Document
 
 # ====================== 在这里填入你的API KEY ======================
-API_KEY = "sk-0df70470c0d04e79af0bd705e804db68"
+API_KEY = os.getenv("API_KEY")
 # ==================================================================
 
 # 页面配置
